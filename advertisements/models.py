@@ -10,9 +10,6 @@ class Adv(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     open = models.BooleanField(default=True)
 
-    def __str__(self):
-        return self.user
-
 
 class F(FilterSet):
     created_at = DateTimeFromToRangeFilter()
