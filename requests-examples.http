@@ -1,0 +1,34 @@
+@baseUrl = http://localhost:8000/
+
+#Создание коментариев
+POST {{baseUrl}}/api/
+Content-Type: application/json
+Authorization: Token 2047bb8894b6b616c9b7197b37c7e8bde0639d64
+
+{
+  "text": "Продам Микроволновку"
+}
+###
+
+# получение всех коментариев
+GET {{baseUrl}}/api?open=True
+Content-Type: application/json
+
+###
+
+# обновление Коментария
+PATCH {{baseUrl}}/api/1/
+Content-Type: application/json
+Authorization: Token 4cc598c7c5650aa72a867e9248c87830d890c515
+
+{
+  "text": "Продам микроволновку Samsung"
+}
+
+###
+
+# удаление коментария
+DELETE {{baseUrl}}/api/4/
+Content-Type: application/json
+Authorization: Token 4cc598c7c5650aa72a867e9248c87830d890c515
+
