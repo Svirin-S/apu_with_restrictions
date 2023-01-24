@@ -8,4 +8,3 @@ class AdvSerializer(serializers.ModelSerializer):
         model = Adv
         fields = ['id', 'user', 'text', 'created_at', 'open']
         read_only_fields = ['user']
-
