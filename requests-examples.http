@@ -11,7 +11,7 @@ Authorization: Token 2047bb8894b6b616c9b7197b37c7e8bde0639d64
 ###
 
 # получение всех коментариев
-GET {{baseUrl}}/api?open=True
+GET {{baseUrl}}/api
 Content-Type: application/json
 
 ###

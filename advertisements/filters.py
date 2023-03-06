@@ -5,7 +5,7 @@ from .models import Adv
 
 class Filter(FilterSet):
     created_at = DateTimeFromToRangeFilter()
-    open = BooleanFilter
+    open = BooleanFilter()
 
     class Meta:
         model = Adv

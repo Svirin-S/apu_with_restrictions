@@ -11,7 +11,7 @@ from .filters import Filter
 class AdvModelViewSet(ModelViewSet):
     queryset = Adv.objects.all()
     serializer_class = AdvSerializer
-    permission_classes = [IsOwner]
+    permission_classes = [IsAuthenticated, IsOwner]
     filterset_class = Filter
 
     def perform_create(self, serializer):
